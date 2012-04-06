@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{743E1822-A963-40FA-B126-ED10D02184EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rabbit_Scan</RootNamespace>
+    <AssemblyName>Rabbit-Scan</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RibbonControlsLibrary" />
+    <Reference Include="Microsoft.Windows.Shell" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NetWorkBrowser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LargeIcon.png" />
+    <Resource Include="Images\SmallIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\erase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\attach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cllipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\checked_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\remove_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\talk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\address_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\empty_trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\full_trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\like_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ruler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\settings2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sinchronize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\windows_client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Info1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\edit1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
